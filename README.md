@@ -16,6 +16,13 @@
 
 ### Constructor
 
+The constructor method is a special method of a class for creating and initializing an object instance of that class.
+
+A constructor enables you to provide any custom initialization that must be done before any other methods can be called.
+
+If you don't provide your own constructor, then a default constructor will be supplied for you. If your class is a base class, the default constructor is empty:
+> constructor() {}
+
 ### OOP Concepts of JavaScript
 
 ### Automatic Semicolon Insertion (ASI)
