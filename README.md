@@ -26,3 +26,8 @@ In JavaScript, a semicolon is automatically inserted when,
 - two statements are separated by a line terminator
 - two statements are separated by a closing brace ('}')
 - a line terminator follows a break, continue, return, or throw.
+
+| Entered code | "Understood" as | Corrected code | 
+|--|--|--|
+| return <br/> 2a + 1;|return; <br/> 2a + 1; | return 2*a + 1; |
+|i<br/>++;|i;<br/>++;|i++;|
