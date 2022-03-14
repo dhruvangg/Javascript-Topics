@@ -21,6 +21,7 @@ When you change the value of any variable, you're reassigning the value of varib
 ### Event bubbling
 
 The bubbling principle is simple. When an event happens on an element, it first runs the handlers on it, then on its parent, then all the way up on other ancestors.
+In the event bubbling, The event is first captured and handled by the innermost element and then propagated to outer elements.
 
 ```
 <form onclick="alert('form')">FORM
@@ -32,8 +33,51 @@ The bubbling principle is simple. When an event happens on an element, it first 
 
 > For instance, a `focus` event does not bubble.
 
+### Event Capturing
+
+In the event capturing, The event is first captured by the outermost element and propagated to the inner elements.
+
+> the capturing phase is rarely used. Normally it is invisible to us.
 
 ### Debounce and Throttle
+
+The debounce() function forces a function to wait a certain amount of time before running again. The function is built to limit the number of times a function is called. 
+
+```
+function debounce(fun, timeout = 300) {
+    let timer
+    return (...args) => {
+        clearTimeout(timer)
+        timer = setTimeout(() => {
+            fun.apply(this, args)
+        }, timeout)
+    }
+}
+
+elem.addEventListener('click', debounce(() => {
+    console.log('Hello')
+}))
+```
+
+The throttle() function is used to call a function after every millisecond or a particular interval of time only the first click is executed immediately.
+
+```
+function throttle(fun, timeout = 300) {
+    let timer
+    return (...args) => {
+        if (!timer) {
+            timer = setTimeout(() => {
+                fun.apply(this, args)
+                timer = null
+            }, timeout)
+        }
+    }
+}
+
+elem.addEventListener('click', throttle(() => {
+    console.log('Hello')
+}))
+```
 
 ### Prototype and Prototype chaining
 
