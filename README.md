@@ -1,5 +1,23 @@
 # Javascript-Topics
 
+### Primitive Types
+
+In JavaScript, a primitive is data that is not an object and has no methods. There are 7 primitive data types: string, number, bigint, boolean, undefined, symbol, and null.
+All primitives are immutable, i.e., they cannot be altered.
+
+Now one question prompted in my mind that we can change any variable's value then How it can be immutable? So Here is the answer: 
+
+```
+let name = "Champ Decay"
+
+name = "Dhruvang Gajjar"
+
+name[0] = "A" // This will not change variable name
+
+```
+
+When you change the value of any variable, you're reassigning the value of varible not altering/mutating it
+
 ### Event bubbling
 
 The bubbling principle is simple. When an event happens on an element, it first runs the handlers on it, then on its parent, then all the way up on other ancestors.
@@ -12,7 +30,7 @@ The bubbling principle is simple. When an event happens on an element, it first 
 </form>
 ```
 
-> For instance, a focus event does not bubble.
+> For instance, a `focus` event does not bubble.
 
 
 ### Debounce and Throttle
