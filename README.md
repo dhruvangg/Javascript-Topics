@@ -1,6 +1,19 @@
 # Javascript-Topics
 
-### Event bubbling and Event capturing
+### Event bubbling
+
+The bubbling principle is simple. When an event happens on an element, it first runs the handlers on it, then on its parent, then all the way up on other ancestors.
+
+```
+<form onclick="alert('form')">FORM
+  <div onclick="alert('div')">DIV
+    <p onclick="alert('p')">P</p>
+  </div>
+</form>
+```
+
+> For instance, a focus event does not bubble.
+
 
 ### Debounce and Throttle
 
