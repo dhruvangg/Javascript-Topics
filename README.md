@@ -81,6 +81,8 @@ elem.addEventListener('click', throttle(() => {
 
 ### Prototype and Prototype chaining
 
+### Shadowing
+
 ### Temporal dead zone
 
 ### Call by Value and Call by Reference
