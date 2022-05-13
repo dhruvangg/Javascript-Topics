@@ -10,6 +10,7 @@ const moviesByCountry = movies.find({
 ### Cursor Methods and Aggregation Equivalents
 
 |Cursor Methods|Aggregation Equivalents|
+| ---- | ---- |
 |.sort()|$sort|
 |.limit()|$limit|
 |.skip()|$skip|
