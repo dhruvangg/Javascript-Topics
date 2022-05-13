@@ -16,3 +16,7 @@ const moviesByCountry = movies.find({
 |.skip()|$skip|
 
 ### Aggregation
+
+Aggregation is a pipeline which are composed of one or more stages, Stages use one or more expressions, expressions are functions. 
+
+- `{ "$add": ["$a", "$b"] }`
