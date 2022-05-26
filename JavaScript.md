@@ -141,7 +141,7 @@ GreetPerson // Hello, Dhruvang Gajjar !
 ```
 
 **Apply** is used to invoke the function and pass the arguments as an array.
-
+      
 ```
 const Person = {
     firstname: 'Dhruvang',
@@ -201,3 +201,45 @@ In JavaScript, a semicolon is automatically inserted when,
 |--|--|--|
 | return <br/> 2a + 1;|return; <br/> 2a + 1; | return 2a + 1; |
 | i<br/>++; | i;<br/>++; | i++; |
+
+### First class function
+
+A function which is treated as a variable is called a **first-class function**.
+
+```
+const handler = () => console.log("This is a click handler function")
+```
+
+### First order function
+
+A function which doesn’t accept another function as an argument and doesn’t return a function as its return value is called a **first-order function**.
+
+```
+function add(x, y) {
+    return x + y
+}
+```
+
+### Hight order function
+
+Higher-order function is a function that accepts another function as an argument or returns a function as a return value or both.
+
+### Pure function
+
+A function which does not depend on any state, or on any values outside its function body is called a **pure function**.
+
+```
+function add(x, y) {
+    return x + y
+}
+```
+
+### Unary function
+
+A function which accepts one argument is called a **unary function**.
+
+```
+function add(x) {
+    return x + 1
+}
+```
