@@ -243,3 +243,10 @@ function add(x) {
     return x + 1
 }
 ```
+
+### One way binding
+In One way binding, data flow is unidirectional which means that the data flows to HTML element from the data model.
+
+### Two way binding
+In Two way binding, data flow is bidirectional Which means that the data flows to HTML element from the data model and vice versa.
+
