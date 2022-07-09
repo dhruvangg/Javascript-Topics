@@ -68,3 +68,12 @@ const Post = {
     }
 }
 ```
+# Get random number from a given range
+
+```
+function getRandom(max, min){
+    return Math.floor(Math.random() * (max - min) + min)
+}
+```
+
+
